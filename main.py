@@ -4,7 +4,6 @@
 # In[ ]:
 
 
-get_ipython().run_line_magic('pip', 'install langchain_groq langchain_core langchain_community')
 
 
 # In[ ]:
