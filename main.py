@@ -22,31 +22,28 @@ print(result.content)
 # In[ ]:
 
 
-get_ipython().run_line_magic('pip', 'install pypdf')
 
 
 # In[ ]:
 
 
-get_ipython().run_line_magic('pip', 'install chromadb')
 
 
 # In[ ]:
 
 
-get_ipython().run_line_magic('pip', 'install -U-langchain-community')
 
 
 # In[ ]:
 
 
-get_ipython().run_line_magic('pip', 'install sentence-transformers')
+
 
 
 # In[1]:
 
 
-get_ipython().run_line_magic('pip', 'install --upgrade langchain langchain-community langchain-groq chromadb sentence-transformers torch')
+
 
 
 # In[1]:
