@@ -12,7 +12,7 @@
 from langchain_groq import ChatGroq
 llm = ChatGroq(
     temperature = 0,
-    groq_api_key = "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",
+    groq_api_key = "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",
     model_name = "llama-3.3-70b-versatile"
 )
 result = llm.invoke("what is langchain in machine learning")
