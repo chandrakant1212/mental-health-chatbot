@@ -1,3 +1,6 @@
+# Acess the chatbot here : 
+ https://244822a61179cab982.gradio.live/
+
 # Mental Health Chatbot
 
 A conversational AI chatbot designed to provide mental health support, guidance, and resources. This project leverages advanced language models and the [LangChain](https://github.com/langchain-ai/langchain) framework to enable context-aware, human-like interactions for users seeking mental wellness assistance.
