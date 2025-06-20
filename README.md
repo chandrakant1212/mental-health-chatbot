@@ -84,8 +84,8 @@ These instructions will help you set up and run the chatbot locally.
     If you are using OpenAI, Groq, or another API, ensure you set your API key(s):
 
     ```bash
-    export OPENAI_API_KEY="your-api-key-here"
-    export GROQ_API_KEY="your-groq-api-key-here"
+    OPENAI_API_KEY=your-api-key-here
+    TOGETHER_API_KEY=your-together-api-key-here
     ```
 
     Or create a `.env` file with:
