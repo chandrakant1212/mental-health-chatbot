@@ -1,5 +1,5 @@
 # Acess the chatbot here : 
- https://244822a61179cab982.gradio.live/
+ https://5b28030b0216be2ac6.gradio.live
 
 # Mental Health Chatbot
 
