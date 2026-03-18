@@ -14,6 +14,8 @@ license: mit
 
 A **RAG-powered** (Retrieval-Augmented Generation) mental health support chatbot with a beautiful Gradio web interface. It provides empathetic, context-aware responses grounded in mental health literature using NVIDIA's Llama 3.1 70B model.
 
+🔗 **[Try it live on Hugging Face Spaces](https://huggingface.co/spaces/chandrakant2311/mental-health-chatbot)**
+
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-Framework-green)
 ![Gradio](https://img.shields.io/badge/Gradio-5.x-orange?logo=gradio)
@@ -67,6 +69,20 @@ chatbot/
 ├── .gitignore             # Git ignore rules
 └── README.md              # This file
 ```
+
+## 🛠️ Tech Stack
+
+| Component | Technology |
+|-----------|-----------|
+| **LLM** | Meta Llama 3.1 70B Instruct via NVIDIA NIM |
+| **Framework** | LangChain |
+| **Vector Database** | ChromaDB |
+| **Embeddings** | Sentence Transformers (all-MiniLM-L6-v2) |
+| **Frontend** | Gradio 5.x |
+| **PDF Parsing** | PyPDF |
+| **Deployment** | Hugging Face Spaces |
+
+---
 
 ## 🚀 Quick Start (Local)
 
@@ -139,64 +155,6 @@ python main.py
 
 ---
 
-## ☁️ Deploy to Hugging Face Spaces (Free)
-
-### Step 1: Create a Hugging Face Account
-
-Sign up at [huggingface.co](https://huggingface.co) if you haven't already.
-
-### Step 2: Create a New Space
-
-1. Go to [huggingface.co/new-space](https://huggingface.co/new-space)
-2. Fill in:
-   - **Space name:** `mental-health-chatbot`
-   - **SDK:** Select **Gradio**
-   - **Visibility:** Public or Private
-3. Click **Create Space**
-
-### Step 3: Add Your API Key as a Secret
-
-1. Go to your Space → **Settings** → **Variables and Secrets**
-2. Click **New Secret**
-3. Name: `NVIDIA_API_KEY`
-4. Value: Your NVIDIA API key (e.g., `nvapi-...`)
-5. Click **Save**
-
-### Step 4: Push Your Code
-
-```bash
-# Set remote with your HF token for authentication
-git remote set-url hf https://YOUR_HF_USERNAME:YOUR_HF_TOKEN@huggingface.co/spaces/YOUR_USERNAME/mental-health-chatbot
-
-# Push to HuggingFace
-git add .
-git commit -m "Deploy mental health chatbot to HF Spaces"
-git push hf main --force
-```
-
-> Replace `YOUR_HF_USERNAME` and `YOUR_HF_TOKEN` with your Hugging Face username and access token.
-
-### Step 5: Wait for Build
-
-Hugging Face will automatically:
-- Install your `requirements.txt`
-- Run `app.py`
-- Build the ChromaDB from your PDF on first run
-- Make your chatbot live at `https://huggingface.co/spaces/YOUR_USERNAME/mental-health-chatbot`
-
----
-
-## 🛠️ Tech Stack
-
-| Component | Technology |
-|-----------|-----------|
-| **LLM** | Meta Llama 3.1 70B Instruct via NVIDIA NIM |
-| **Framework** | LangChain |
-| **Vector Database** | ChromaDB |
-| **Embeddings** | Sentence Transformers (all-MiniLM-L6-v2) |
-| **Frontend** | Gradio 5.x |
-| **PDF Parsing** | PyPDF |
-
 ## 🔧 Customization
 
 ### Change the LLM Model
@@ -225,6 +183,8 @@ rm -rf chroma_db
 ### Modify the Prompt
 
 Edit the `MENTAL_HEALTH_PROMPT` in `main.py` to customize the chatbot's personality and safety guidelines.
+
+---
 
 ## ⚠️ Disclaimer
 
